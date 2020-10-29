@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Tools.ExtentTestNGReporterListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="E:/work/new/WireMock/AutoTest">
+        <classes>
+            <class name="UserModule.GetUserList">
+                <methods>
+                    <include name="userlist"/>
+                    <include name="userlist1"/>
+                    <include name="userlist2"/>
+                    <include name="userlist3"/>
+                </methods></class>
+            <class name="UserModule.SetUserInfo">
+                <methods>
+                    <include name="userinfo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
